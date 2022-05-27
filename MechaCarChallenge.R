@@ -9,9 +9,11 @@ summary(MechaCarlm)
 
 SuspensionCoil <- read.csv("Suspension_Coil.csv",stringsAsFactors = F, check.names = F)
 
-total_summary <- SuspensionCoil %>%summarize(Mean=mean(PSI),Median=median(PSI),Variance=var(PSI),SD=sd(PSI))
+total_summary <- SuspensionCoil %>%
+  summarize(Mean=mean(PSI),Median=median(PSI),Variance=var(PSI),SD=sd(PSI))
 
-lot_summary <- SuspensionCoil %>% group_by(Manufacturing_Lot) %>%summarize(Mean=mean(PSI),Median=median(PSI),Variance=var(PSI),SD=sd(PSI), .groups='keep')
+lot_summary <- SuspensionCoil %>% group_by(Manufacturing_Lot) %>%
+  summarize(Mean=mean(PSI),Median=median(PSI),Variance=var(PSI),SD=sd(PSI), .groups='keep')
 
 t.test(SuspensionCoil$PSI,mu = 1500)
 
@@ -22,7 +24,6 @@ t.test(subset(SuspensionCoil,Manufacturing_Lot=="Lot2")$PSI,mu = 1500)
 t.test(subset(SuspensionCoil,Manufacturing_Lot=="Lot3")$PSI,mu = 1500)
 
 
-install.packages("sparklyr")
 
 
 
