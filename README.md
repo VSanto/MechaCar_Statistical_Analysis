@@ -12,7 +12,7 @@
 
 ## Summary Statistics on Suspension Coils
 
-*  The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. The data      shows that the current manufacturing data meets the design specification for lot1 and lot2, but lot3 does not meet the design specifications as the vairance is much    higher than allowed variance.
+*  The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. The data      shows that the current manufacturing data meets the design specification for the T-Test and all lots.  
 
 #### The suspension coil’s PSI continuous variable across all manufacturing lots
 
@@ -24,20 +24,25 @@
 
 ## T-Tests on Suspension Coils
 
-* Lot1 
+![t_test](https://user-images.githubusercontent.com/92495807/170896361-06a5764c-8ebb-4905-bbaf-c597ddc25c1a.PNG)
 
-![t_test_lot1](https://user-images.githubusercontent.com/92495807/170616930-a7fbadfa-a850-44ce-b80a-ab09b14eb4e2.PNG)
+* ### Lot1 
 
-![t-test_lot2](https://user-images.githubusercontent.com/92495807/170616934-cf974974-eba8-470e-83ab-a3681427ea5d.PNG)
+![t_test_lot1](https://user-images.githubusercontent.com/92495807/170896372-326ff3f1-b0c2-4768-bbbd-a10e5e133fbe.PNG)
 
-![t_test_lot3](https://user-images.githubusercontent.com/92495807/170616942-a4387965-e879-478e-a51a-60ee133024cb.PNG)
+* ### Lot 2
+
+![t_test_lot2](https://user-images.githubusercontent.com/92495807/170896418-caa6ff29-c395-4c39-a3b1-b0e8e987d8cc.PNG)
+
+* ### Lot 3
+
+![t_test_lot3](https://user-images.githubusercontent.com/92495807/170896445-e4e92173-dab1-4d67-af46-5d55dc8ea26b.PNG)
+
 
 ## Study Design: MechaCar vs Comptition
 
-* What metric or metrics are you going to test?
-
-* What is the null hypothesis or alternative hypothesis?
-
-* What statistical test would you use to test the hypothesis? And why?
-
-*  What data is needed to run the statistical test?
+How MechaCar preforms against the comptition.  
+   * A T-Test can be used to compare Safety Ratings throughout the industry.
+   * The null hypothesis would show NO difference in safety ratings with the compitition.
+   * The alternative hypothesis would suggest a differnce in the safety ratings with the compitition.
+   * Additional analysis using the results of the T-Test should provide more information.
